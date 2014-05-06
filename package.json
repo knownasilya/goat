@@ -1,20 +1,26 @@
 {
-  "name": "serve-dev",
+  "name": "goat",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Serve static files for development, simple and unobstructive.",
+  "main": "./bin/goat",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ilya Radchenko",
+  "license": "MIT",
   "preferGlobal": "true",
   "bin": {
-    "serve-dev": "./bin/serve-dev"
+    "goat": "./bin/goat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:knownasilya/goat.git"
   },
   "dependencies": {
+    "chalk": "^0.4.0",
     "express": "^4.1.1",
     "ltcdr": "^2.2.1",
+    "marked": "^0.3.2",
     "serve-static": "^1.1.0"
   }
 }
