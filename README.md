@@ -23,7 +23,7 @@ Then add it to your `package.json` as a script:
 ### Available Options
 
 ```no-highlight
-  Usage: serve-dev [options]
+  Usage: goat [options]
 
   Options:
 
