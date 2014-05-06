@@ -1,0 +1,20 @@
+{
+  "name": "serve-dev",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "preferGlobal": "true",
+  "bin": {
+    "serve-dev": "./bin/serve-dev"
+  },
+  "dependencies": {
+    "express": "^4.1.1",
+    "ltcdr": "^2.2.1",
+    "serve-static": "^1.1.0"
+  }
+}
