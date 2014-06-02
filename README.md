@@ -31,10 +31,11 @@ Usage: goat [options]
 
 Options:
 
-  -h, --help               output usage information
-  -V, --version            output the version number
-  -e, --entry-file [file]  Usually an index.html
-  -p, --port [port]        Port to run server on, default: 3000
+  -h, --help                output usage information
+  -V, --version             output the version number
+  -e, --entry-file [file]   Usually an index.html, defaults to './index.html'
+  -p, --port [port]         Port to run server on, defaults to 3000
+  -d, --domain-host [host]  Host to serve static files at, defaults to 'localhost'
 ```
 
 #### Multiple Static Directories
