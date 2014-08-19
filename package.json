@@ -1,6 +1,6 @@
 {
   "name": "goat",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Serve static files for development, simple and unobstructive.",
   "main": "./bin/goat",
   "scripts": {
