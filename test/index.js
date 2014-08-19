@@ -8,8 +8,8 @@ test('splitter', function (t) {
     var result = splitter('./blah:/hi');
     var blankEndpoint = splitter('./hah:');
 
-    n.same(result, { endpoint: '/hi', source: './blah' }, 'no separator');
-    n.same(blankEndpoint, { endpoint: '/', source: './hah' }, 'blank endpoint');
+    n.same(result, { endpoint: '/hi', isRoute: false, source: './blah' }, 'no separator');
+    n.same(blankEndpoint, { endpoint: '/', isRoute: false, source: './hah' }, 'blank endpoint');
     n.end();
   });
 
