@@ -36,6 +36,7 @@ Options:
   -e, --entry-file [file]   Usually an index.html, defaults to './index.html'
   -p, --port [port]         Port to run server on, defaults to 3000
   -d, --domain-host [host]  Host to serve static files at, defaults to 'localhost'
+  -x, --debug               Enable development logging for debugging purposes
 ```
 
 #### Multiple Static Directories
