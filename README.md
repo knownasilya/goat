@@ -45,15 +45,23 @@ Any additional paths that you append to the end will be served as static directo
 When using `-e`, the parent directory is added as a static directory, so no need to add
 it manually.
 
-##### Custom Endpoints
+##### Custom Named Routes
 
-For custom endpoints, use the `:` (colon) syntax. For example:
+For custom named routes, use the `:` (colon) syntax. For example:
 
 ```no-highlight
 goat -e ./static/index.html ./dist/scripts:/scripts
 ```
 
 Would make everything in the scripts folder available at `localhost:3000/scripts`.
+
+
+Multiple formats are supported:
+
+  * `.js` -- If you specify a `.js` file with a named route, it's assumed to be an express route, e.g. `api/users.json:/api/users`.
+    See the example route in `test/route.js` which can be ran with `goat -e test/index.html test/route.js:/api/hello`
+  * `.json` -- Is JSON, so we serve it as JSON, also only if there is an custom named route. This is an easy way to mock an API endpoint.
+
 
 [npm-badge]: https://nodei.co/npm/goat.svg?stars=true
 [npm-badge-link]: https://nodei.co/npm/goat/
