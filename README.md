@@ -37,6 +37,7 @@ Options:
   -p, --port [port]         Port to run server on, defaults to 3000
   -d, --domain-host [host]  Host to serve static files at, defaults to 'localhost'
   -x, --debug               Enable development logging for debugging purposes
+  -c, --cors                Enable cors
 ```
 
 #### Multiple Static Directories
