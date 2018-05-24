@@ -8,7 +8,7 @@
   },
   "author": "Ilya Radchenko",
   "license": "MIT",
-  "preferGlobal": "true",
+  "preferGlobal": true,
   "bin": {
     "goat": "./bin/goat"
   },
